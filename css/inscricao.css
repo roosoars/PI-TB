@@ -1,0 +1,117 @@
+:root {
+    --font-size-base: 16px;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    height: 100vh;
+    margin: 0;
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    width: 80%;
+    max-width: 37.5rem;
+    background-color: #fff;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+fieldset {
+    border: 0.125rem solid #44475A;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #44475A;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: #44475A;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+    width: calc(100% - 1.25rem);
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    border: 0.063rem solid #44475A;
+    border-radius: 0.313rem;
+}
+
+.radio-group, .checkbox-group {
+    margin-bottom: 1.25rem;
+}
+
+.radio-group input, .checkbox-group input {
+    margin-right: 0.313rem;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: #44475A;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.313rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #282A36;
+}
+
+.form-buttons button:first-child {
+    margin-right: 0.625rem;
+}
+
+@media (max-width: 900px) {
+    form {
+        width: 80%;
+        max-height: 33.75rem;
+        margin-top: 2.8125rem;
+    }
+
+    button {
+        max-height: 3.125rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        width: 95%;
+        height: 0.3125rem;
+    }
+
+    legend {
+        font-size: 0.9375rem;
+    }
+    label, form p {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,32 @@
+table {
+    position: absolute;
+    border-collapse: separate;
+    border-spacing: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+th, td {
+    height: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 10px;
+}
+
+th {
+    background-color: #0096FF;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    table {
+        width: 90%;
+        margin-top: 50px;
+    }
+    th, td {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/inscricao.css">
+</head>
+<body>
+<header>
+    <div id="logo">
+        <p>CodeWeek.</p>
+    </div>
+    <nav id="menu">
+        <a href="index.html">INICIO</a>
+        <a href="programacao.html">PROGRAMAÇÃO</a>
+        <a href="inscricao.html" id="atual">INSCRIÇÃO</a>
+        <a href="organizacao.html">ORGANIZAÇÃO</a>
+        <a href="local.html">LOCAL</a>
+    </nav>
+</header>
+<main>
+    <div>
+        <video id="video-background" autoplay muted loop>
+            <source src="/assets/bg.mp4" type="video/mp4">
+        </video>
+        <div id="overlay"></div>
+    </div>
+    <form action="registrado.html" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Inscrição</legend>
+            <div class="input-container">
+                <div>
+                    <label for="user-name">NOME:</label>
+                    <input type="text" id="user-name" name="user-name" required>
+                </div>
+                <div>
+                    <label for="user-email">E-MAIL:</label>
+                    <input type="email" id="user-email" name="user-email" required>
+                </div>
+                <div>
+                    <label for="user-invitations">CONVITES:</label>
+                    <input type="number" id="user-invitations" name="user-invitations" required>
+                </div>
+            </div>
+            <div class="code-challenge">
+                <p>Deseja participar do concurso de programação?</p>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="code-challenge" value="yes">
+                    <label for="yes">Sim</label>
+                    <input type="radio" id="no" name="code-challenge" value="no">
+                    <label for="no">Não</label>
+                </div>
+            </div>
+            <div class="courses">
+                <p>Tem interesse em quais mini cursos?</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="java" name="courses" value="Java" /> <label for="java">Java</label>
+                    <input type="checkbox" id="python" name="courses" value="Python" /> <label for="python">Python</label>
+                    <input type="checkbox" id="c" name="courses" value="C" /> <label for="c">C</label>
+                    <input type="checkbox" id="cpp" name="courses" value="C++" /> <label for="cpp">C++</label>
+                    <input type="checkbox" id="swift" name="courses" value="Swift" /> <label for="swift">Swift</label>
+                    <input type="checkbox" id="none" name="courses" value="none" /> <label for="none">Nenhum</label>
+                </div>
+            </div>
+            <div class="ticket-type">
+                <p>Ingresso</p>
+                <select name="ticket-type">
+                    <option value="Normal">NORMAL</option>
+                    <option value="VIP">VIP</option>
+                    <option value="IMPRENSA">IMPRENSA</option>
+                    <option value="CONVIDADO">CONVIDADO</option>
+                </select>
+            </div>
+        </fieldset>
+        <div class="form-buttons">
+            <button id="submit" type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</main>
+<footer>
+    <p>Universidade Federal de Uberlândia</p>
+</footer>
+</body>
+</html>
